@@ -5,13 +5,13 @@ using Domain.Entities;
 
 namespace Connector.Github
 {
-    public class GithubJobSearcher : IJobSearcher
+    public class GithubJobSearcher : IGithubJobSearcher
     {
         private readonly HttpClient _httpClient;
 
         public GithubJobSearcher(HttpClient httpClient) => _httpClient = httpClient;
 
-        public async Task<GithubJob> GetAsync<GithubJob>()
+        public Task GetAsync()
         {
             throw new System.NotImplementedException();
         }

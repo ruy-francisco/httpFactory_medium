@@ -2,8 +2,8 @@ using System.Threading.Tasks;
 
 namespace Domain.Interfaces
 {
-    public interface IJobSearcher
+    public interface IGithubJobSearcher
     {
-        Task<T> GetAsync<T>();
+        Task GetAsync();
     }
 }
